@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Duo</title>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header>
+        <h1>STUDY DUO</h1>
+        <p>Manage your tasks and study schedule in one place.</p>
+    </header>
+    <main>
+        <section>
+            <h2>TASKS</h2>
+            <form id="task-form">
+                <lable for ="task-title">Task name</lable>
+                <input type = "text" id="task-title" placeholder="e.g Finish biology homework" required>
+                <lable for ="task-subject">Subject</lable>
+                <input type="text" id ="task-subject" placeholder="e.g. Biology" required>
+                <lable for ="task-due-date">Due Task</lable>
+                <input type ="date"  id="task-due-date" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+        <section>
+            <h2>STUDY SCHEDULE</h2>
+            <form id="study-form">
+                <lable for ="study-subject">Subject</lable>
+                <input type="text" id="study-subject" placeholder="e.g. Mathematics" required>
+                <lable for="study-topic">Topic</lable>
+                <input type ="text" id="study-topic" placeholder="e.g. Algebra" required>
+                <label for ="study-date">Study date</label>
+                <input type="date" id="study-date" required>
+                <lable for="study-time">Study-time</lable>
+                <input type="time" id ="study-time" required>
+                <button type="submit" >Add study session</button>
+            </form>
+            <ul id="study-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
